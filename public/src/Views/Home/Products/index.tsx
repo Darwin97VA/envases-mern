@@ -56,7 +56,7 @@ const Products = () => {
             <div className="col-md-9 col-sm">
               <div className="tab-content" id="v-pills-tabContent">
                 <div className="tab-pane fade show active" id="item-vasos" role="tabpanel" aria-labelledby="item-vasos-tab">
-                    <div className="d-flex flex-column align-items-center">
+                    <div className="d-flex flex-column align-items-center" style={{overflowX: "scroll"}}>
                         <h3 className="text-center pt-2 pb-3">Vasos</h3>
                         <div className="d-flex">
                           <Btn src="/img/productos/vasos/size1_1.png" alt="Vasos Lisos" />
@@ -69,7 +69,7 @@ const Products = () => {
                     </div>
                 </div>
                 <div className="tab-pane fade" id="item-cajas" role="tabpanel" aria-labelledby="item-cajas-tab">
-                    <div className="d-flex flex-column align-items-center">
+                    <div className="d-flex flex-column align-items-center" style={{overflowX: "scroll"}}>
                         <h3 className="text-center pt-2 pb-3">Cajas</h3>
                         <div className="d-flex">
                           <Btn src="/img/productos/cajas/size1_1.png" alt="Cajitas para Sandwich" />
@@ -82,7 +82,7 @@ const Products = () => {
                     </div>
                 </div>
                 <div className="tab-pane fade" id="item-contenedores" role="tabpanel" aria-labelledby="item-contenedores-tab">
-                    <div className="d-flex flex-column align-items-center">
+                    <div className="d-flex flex-column align-items-center" style={{overflowX: "scroll"}}>
                         <h3 className="text-center pt-2 pb-3">Contenedores</h3>
                         <div className="d-flex">
                           <Btn src="/img/productos/contenedores/1.png" alt="Contenedor blanco" />
@@ -95,7 +95,7 @@ const Products = () => {
                     </div>
                 </div>
                 <div className="tab-pane fade" id="item-bolsas" role="tabpanel" aria-labelledby="item-bolsas-tab">
-                    <div className="d-flex flex-column align-items-center">
+                    <div className="d-flex flex-column align-items-center" style={{overflowX: "scroll"}}>
                         <h3 className="text-center pt-2 pb-3">Bolsas</h3>
                         <div className="d-flex">
                           <Btn src="/img/productos/bolsas/1.png" alt="Bolsas de papel blanco" />
@@ -107,7 +107,7 @@ const Products = () => {
                     </div>
                 </div>
                 <div className="tab-pane fade" id="item-sorbetes" role="tabpanel" aria-labelledby="item-sorbetes-tab">
-                    <div className="d-flex flex-column align-items-center">
+                    <div className="d-flex flex-column align-items-center" style={{overflowX: "scroll"}}>
                         <h3 className="text-center pt-2 pb-3">Sorbetes y Removedores</h3>
                         <div className="d-flex">
                             <button type="button" data-toggle="modal" data-target="#modalProducto">
@@ -125,7 +125,7 @@ const Products = () => {
                     </div>
                 </div>
                 <div className="tab-pane fade" id="item-bases" role="tabpanel" aria-labelledby="item-bases-tab">
-                    <div className="d-flex flex-column align-items-center">
+                    <div className="d-flex flex-column align-items-center" style={{overflowX: "scroll"}}>
                         <h3 className="text-center pt-2 pb-3">Bases y pisos</h3>
                         <div className="d-flex">
                             <button type="button" data-toggle="modal" data-target="#modalProducto">
@@ -168,7 +168,7 @@ const Products = () => {
               </button>
             </div>
             <div className="modal-body d-flex justify-content-center">
-                <img src={src} alt={alt} id="modalProducto_imagen" />
+                <img src={src} alt={alt} id="modalProducto_imagen" style={{maxWidth:'100%'}} />
             </div>
           </div>
         </div>
