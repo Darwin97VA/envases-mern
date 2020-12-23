@@ -2,8 +2,11 @@ import React, { useEffect, useState } from 'react'
 import './style.css'
 
 const {
-  REACT_APP_API_DOMAIN
+  REACT_APP_API_DOMAIN,
+  NODE_ENV
 } = process.env
+
+const API_DOMAIN = NODE_ENV === 'production' ? '/' : REACT_APP_API_DOMAIN
 
 const Formulario = () => {
   const [nameFile, setNameFile] = useState('Subir archivo')
@@ -83,7 +86,7 @@ const Formulario = () => {
           formData.append('asunto', inputAsunto?.value)
           formData.append('mensaje', inputMensaje?.value)
   
-          fetch(REACT_APP_API_DOMAIN + '/api/contacto', {
+          fetch(API_DOMAIN + 'api/contacto', {
               method: 'POST',
               body: formData,
               mode: 'cors',
